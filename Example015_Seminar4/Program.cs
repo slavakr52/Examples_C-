@@ -53,9 +53,42 @@ int[] ArrayRandom(int[] array)
 }
 */
 
-//Найти произведение всех элементов массива целых чисел, меньших заданного числа. Размерность массива –10. Заполнение массива осуществить случайными числами от 50 до 100.
+// Задача 30:   Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.   [1,0,1,1,0,1,0,0]
+/* int[] array = new int[8];
+Mass(array);
+Console.WriteLine($"Массив:  {String.Join("  ",array)}");
 
-Console.WriteLine("Введите число: ");
-int Number = int.Parse(Console.ReadLine()!);
+int[] Mass(int[] array){
+    for(int i=0; i<array.Length; i++){
+        array[i] = new Random().Next(0,2);
+    }
+    return array;
+} */
 
-Console.WriteLine($"Произведение всех чисел массива, меньше числа {Number}, равно {ArrayRandom()}");
+
+/// Задача 28: Найти произведение всех элементов массива целых чисел, меньших заданного числа. Размерность массива – 10. Заполнение массива осуществить случайными числами от 50 до 100.
+
+/*
+int[] arr= array(10);
+Console.WriteLine($"Массив [{String.Join(", ",arr)}]");
+Console.Write("Введите число: ");
+int Num = int.Parse(Console.ReadLine()!);
+Console.WriteLine($"Произведение элементов меньше {Num} следующее {arrayPr(arr, Num)}");
+
+int[] array(int number){  // Заполнение массива
+    int[] array1= new int[number];
+     for(int i=0; i<array1.Length; i++){
+        array1[i] = new Random().Next(50,101);
+    }
+    return array1;
+}
+int arrayPr(int[] array, int number){  // Произведение элементов
+    int Proizv=1;
+     for(int i=0; i<array.Length; i++){
+        if (array[i]<number){
+            Proizv=Proizv*array[i];
+        }
+       }
+    return Proizv;
+}
+*/
